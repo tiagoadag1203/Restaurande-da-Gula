@@ -1,0 +1,20 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    gap: 1rem;
+    padding: 20px;
+}
+
+.navbar-links{
+    
+}
+
+.navbar-logo{
+    width: 5rem;
+}
+
+.link{
+    font-size: 18px;
+    color: var(--cor-principal);
+}
