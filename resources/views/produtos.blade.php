@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Meu Restaurante</title>
-        <!-- Adicionando Google Fonts e ícones sem Materialize -->
+
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <!-- CSS Personalizado -->
+
         <link href="{{ asset('css/produtos.css') }}" rel="stylesheet">
-
-
+ 
+        
     </head>
     <body class="font-sans antialiased">
 
@@ -20,6 +20,7 @@
         <a href="/">Início</a>
         <a href="produtos">Cadastrar Novo Produto</a>
         <a href="cardapio">Ver os pratos</a>
+        <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
         <a href="#contato">Contato</a>
     </nav>
 

@@ -100,6 +100,30 @@ CREATE TABLE item_compra (
     FOREIGN KEY (id_ingrediente) REFERENCES ingrediente(id_ingrediente)
 );
 
+CREATE TABLE fornecedor (
+    id_fornecedor INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf_cnpj VARCHAR(20) NOT NULL,
+    endereco VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE produto_fornecido (
+    id_fornecedor INT NOT NULL,
+    tipo_produto VARCHAR(100) NOT NULL,
+    quantidade DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (id_fornecedor, tipo_produto),
+    FOREIGN KEY (id_fornecedor) REFERENCES fornecedor(id_fornecedor)
+);
+
+CREATE TABLE contato_fornecedor (
+    id_contato INT AUTO_INCREMENT PRIMARY KEY,  
+    id_fornecedor INT NOT NULL,                 
+    tipo VARCHAR(50) NOT NULL,                  
+    valor VARCHAR(100) NOT NULL,                
+    FOREIGN KEY (id_fornecedor) REFERENCES fornecedor(id_fornecedor)
+);
+
+
 
 -- Populando a tabela cliente
 INSERT INTO cliente (nome) 
