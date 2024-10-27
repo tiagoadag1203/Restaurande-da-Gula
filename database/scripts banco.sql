@@ -49,25 +49,25 @@ CREATE TABLE Endereco_Clientes (
 
 
 CREATE TABLE prato (
-    id_prato INT IDENTITY(1,1) PRIMARY KEY,
+    id_prato INT IDENTITY(1,1) PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL
 );
 
 CREATE TABLE ingrediente (
-    id_ingrediente INT IDENTITY(1,1) PRIMARY KEY,
+    id_ingrediente INT IDENTITY(1,1) PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE encomenda (
-    id_encomenda INT IDENTITY(1,1) PRIMARY KEY,
+    id_encomenda INT IDENTITY(1,1) PRIMARY KEY AUTO_INCREMENT,
     id_cliente INT,
     data DATE,
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
 );
 
 CREATE TABLE item_encomenda (
-    id_item_encomenda INT IDENTITY(1,1) PRIMARY KEY,
+    id_item_encomenda INT IDENTITY(1,1) PRIMARY KEY AUTO_INCREMENT,
     id_encomenda INT,
     id_prato INT,
     quantidade INT,
@@ -85,14 +85,14 @@ CREATE TABLE composto_por (
 );
 
 CREATE TABLE compra (
-    id_compra INT IDENTITY(1,1) PRIMARY KEY,
+    id_compra INT IDENTITY(1,1) PRIMARY KEY AUTO_INCREMENT,
     data DATETIME NOT NULL,
     fornecedor VARCHAR(100) NOT NULL,
     nota_fiscal VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE item_compra (
-    id_item_compra INT IDENTITY(1,1) PRIMARY KEY,
+    id_item_compra INT IDENTITY(1,1) PRIMARY KEY AUTO_INCREMENT,
     id_compra INT,
     id_ingrediente INT,
     quantidade DECIMAL(10, 2) NOT NULL,
