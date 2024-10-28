@@ -14,11 +14,7 @@ Route::get('/produtos', function () {
     return view('produtos');
 });//Cadastrar um novo produto *EX = "Lanche forno"
 
-Route::post('/produtos/cadastrar', function(Request $request) {
-    $produtos = new Produtos();   
-    $produtos->gravar($request->formNomeProduto,$request->formFornecedorProduto);
-    return view('produtos',["dado"=> "dados passados via post"]);
-});
+
 
 
 
@@ -39,6 +35,16 @@ Route::get('/cardapio', function () {
 Route::get('/cadastroFornecedores', function () {
     return view('Registro_Fornecedor');
 });//Cadastrar um novo fornecedor
+
+
+
+Route::post('/produtos/cadastrar', function(Request $request) {
+    $produtos = new Produtos();   
+    $produtos->gravar($request->formNomeProduto,$request->formFornecedorProduto);
+    return view('produtos',["dado"=> "dados passados via post"]);
+});//Cadastrar um novo produto
+
+
 
 
 Route::post('/cadastroFornecedores/cadastrar', function(Request $request) {

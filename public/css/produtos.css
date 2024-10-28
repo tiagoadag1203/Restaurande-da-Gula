@@ -76,6 +76,7 @@ form {
       nav {
         background-color: #333;
         overflow: hidden;
+        top: 0;
     }
 
     nav a {
