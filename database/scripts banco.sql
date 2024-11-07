@@ -9,7 +9,7 @@ CREATE TABLE [dbo].[Telefone_Clientes] (
     [telefone] VARCHAR(20) NOT NULL,
     [id_cliente] INT NOT NULL,
     FOREIGN KEY ([id_cliente]) REFERENCES [dbo].[cliente]([id_cliente])
-);
+
 
 CREATE TABLE [dbo].[Endereco_Clientes] (
     [id_endereco] INT AUTO_INCREMENT PRIMARY KEY,
