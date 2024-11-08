@@ -10,6 +10,15 @@ class Fornecedor extends Model {
     public $cpfCnpj;
 
 
+    public function contatos() {
+        return $this->hasMany(ContatoFornecedor::class, 'id_fornecedor');
+    }
+
+    public function produtosFornecidos() {
+        return $this->hasMany(ProdutoFornecido::class, 'id_fornecedor');
+    }
+
+
     public function cadastrarFornecedor($nome, $cpfCnpj, $endereco, $tipoProduto, $quantidade, $tipoContato, $valorContato) {
         try {
             DB::beginTransaction();
@@ -34,12 +43,8 @@ class Fornecedor extends Model {
     
 
     public function listarFornecedores() {
-        return DB::select('SELECT * FROM fornecedor ORDER BY id_fornecedor DESC');
+        return DB::select('SELECT * FROM fornecedor ORDER BY id_fornecedor ASC');
     }
 
-
-    public function getFornecedor($idFornecedor) {
-        return DB::select('SELECT * FROM fornecedor WHERE id_fornecedor = ?', [$idFornecedor]);
-    }
 }
 ?>

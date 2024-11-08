@@ -18,10 +18,10 @@
 
     <nav>
         <a href="/">Início</a>
-        <a href="produtos">Cadastrar Novo Produto</a>
+        <a href="produtos">Cadastrar Novo Prato</a>
         <a href="cardapio">Ver os pratos</a>
         <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
-        <a href="#contato">Contato</a>
+        <a href="Fornecedores">Fornecedor</a>
     </nav>
 
         <h1>Cadastro de produtos</h1>
@@ -49,12 +49,6 @@
                     <label for="formValorProduto">Valor Produto</label>
                     <i class="material-icons">attach_money</i>
                     <input type="text" id="formValorProduto" name="formValorProduto">
-                </div>
-
-                <div class="input-group">
-                    <label for="formFornecedorProduto">Fornecedor Produto</label>
-                    <i class="material-icons">contact_phone</i>
-                    <input type="text" id="formFornecedorProduto" name="formFornecedorProduto">
                 </div>
 
                 <input type="submit" value="GRAVAR" class="submit-btn">
