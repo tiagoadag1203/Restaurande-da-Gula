@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Produtos;
+use App\Models\Pratos;
 use App\Models\Fornecedor;
 use Illuminate\Http\Request;
 
@@ -14,8 +14,9 @@ Route::get('/produtos', function () {
     return view('produtos');
 });//Cadastrar um novo produto *EX = "Lanche forno"
 
-
-
+Route::get('/Fornecedores', function () {
+    return view('Fornecedores');
+});//Visualizar os fornecedores
 
 
 Route::get('/user/{id}', function (string $id) {
@@ -24,11 +25,18 @@ Route::get('/user/{id}', function (string $id) {
 
 
 Route::get('/cardapio', function () {
-        $produtos = new Produtos();   
-        $produtos= $produtos->listarProdutos();         
-    return view('pratos',["listaProdutos"=>$produtos]);
+    $pratos = new Pratos();   
+    $listarPratos = $pratos->listarPratos();         
+    return view('pratos', ["listarPratos" => $listarPratos]);
 });//Lista dos produtos cadastrados
 
+//FORNECEDOR
+
+Route::get('/Fornecedores', function () {
+    $fornecedor = new Fornecedor();   
+    $fornecedores = $fornecedor->listarFornecedores();         
+    return view('Fornecedores', ["fornecedor" => $fornecedores]);
+});
 
 //FORNECEDOR
 
@@ -39,9 +47,9 @@ Route::get('/cadastroFornecedores', function () {
 
 
 Route::post('/produtos/cadastrar', function(Request $request) {
-    $produtos = new Produtos();   
-    $produtos->gravar($request->formNomeProduto,$request->formFornecedorProduto);
-    return view('produtos',["dado"=> "dados passados via post"]);
+    $pratos = new Pratos();   
+    $pratos->gravar($request->formNomeProduto,$request->formValorProduto);
+    return view('pratos',["dado"=> "dados passados via post"]);
 });//Cadastrar um novo produto
 
 
@@ -56,4 +64,3 @@ Route::post('/cadastroFornecedores/cadastrar', function(Request $request) {
     return view('Registro_Fornecedor',["dado"=> "dados passados via post"]);
 });
 
-//FORNECEDOR

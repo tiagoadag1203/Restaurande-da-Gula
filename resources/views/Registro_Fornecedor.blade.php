@@ -8,12 +8,12 @@
 </head>
 
 <body>
-    <nav>
+<nav>
         <a href="/">Início</a>
-        <a href="produtos">Cadastrar Novo Produto</a>
+        <a href="produtos">Cadastrar Novo Prato</a>
         <a href="cardapio">Ver os pratos</a>
         <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
-        <a href="#contato">Contato</a>
+        <a href="Fornecedores">Fornecedor</a>
     </nav>
 
     <div class="form-container">
