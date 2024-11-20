@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Fornecedores</title>
     <link href="{{ asset('css/fornecedores.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <h1>Lista de Fornecedores</h1>
