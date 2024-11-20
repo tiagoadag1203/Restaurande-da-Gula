@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Fornecedores</title>
-    <link href="{{ asset('css/registro_for.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
 </head>
 
 <body>
-<nav>
+    <nav>
         <a href="/">Início</a>
         <a href="produtos">Cadastrar Novo Prato</a>
         <a href="cardapio">Ver os pratos</a>
@@ -19,7 +22,7 @@
     <div class="form-container">
         <h2>Registro de Fornecedores</h2>
         <form action="/cadastroFornecedores/cadastrar" method="post">
-            @csrf  <!-- Adicione o token CSRF para proteção -->
+            @csrf <!-- Adicione o token CSRF para proteção -->
             <div class="form-group">
                 <label for="NomeFornecedor">Nome do Fornecedor:</label>
                 <input type="text" id="NomeFornecedor" name="nomeFornecedor" required>
@@ -61,4 +64,5 @@
         </form>
     </div>
 </body>
+
 </html>
