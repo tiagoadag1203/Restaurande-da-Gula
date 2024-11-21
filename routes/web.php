@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EstoqueController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Pratos;
 use App\Models\Fornecedor;
@@ -64,3 +65,5 @@ Route::post('/cadastroFornecedores/cadastrar', function(Request $request) {
     return view('Registro_Fornecedor',["dado"=> "dados passados via post"]);
 });
 
+
+Route::get('/estoque', [EstoqueController::class, 'index'])->name('estoque.index');
