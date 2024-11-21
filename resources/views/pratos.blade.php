@@ -5,18 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meu Restaurante</title>
+    <title>Pratos</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ asset('css/pratos.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
 </head>
 <body class="font-sans antialiased">
     <nav>
         <a href="/">Início</a>
         <a href="produtos">Cadastrar Novo Prato</a>
-        <a href="cardapio">Ver os pratos</a>
-        <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
-        <a href="Fornecedores">Fornecedor</a>
     </nav>
 
     <h1>Produtos disponíveis</h1>

@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Fornecedores</title>
     <link href="{{ asset('css/fornecedores.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <h1>Lista de Fornecedores</h1>
 
     <nav>
         <a href="/">Início</a>
-        <a href="produtos">Cadastrar Novo Produto</a>
-        <a href="cardapio">Ver os pratos</a>
         <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
-        <a href="Fornecedores">Fornecedor</a>
     </nav>
 
 
