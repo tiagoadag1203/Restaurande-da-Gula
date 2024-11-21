@@ -16,9 +16,6 @@
     <nav>
         <a href="/">Início</a>
         <a href="produtos">Cadastrar Novo Prato</a>
-        <a href="cardapio">Ver os pratos</a>
-        <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
-        <a href="Fornecedores">Fornecedor</a>
     </nav>
 
     <h1>Produtos disponíveis</h1>

@@ -26,7 +26,8 @@ CREATE TABLE `prato` (
 
 CREATE TABLE `ingrediente` (
     `id_ingrediente` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `nome` VARCHAR(100) NOT NULL
+    `nome` VARCHAR(100) NOT NULL,
+    `quantidade` DECIMAL(10,2) NOT NULL
 );
 
 CREATE TABLE `encomenda` (
@@ -165,6 +166,7 @@ VALUES
 
 
 /*Trigger atualiza estoque */
+DELIMITER $$
 
 CREATE TRIGGER `AtualizarEstoqueIngredientes` 
 AFTER INSERT ON `item_encomenda`
@@ -199,6 +201,8 @@ BEGIN
 
     CLOSE cur_ingredientes;
 END$$
+
+DELIMITER $$
 
 /*Trigger */
 

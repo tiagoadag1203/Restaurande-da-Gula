@@ -12,7 +12,10 @@ class Ingrediente extends Model
     protected $table = 'ingrediente';
 
     protected $fillable = [
-        'id_ingrediente',
         'nome',
+        'quantidade'
     ];
+    
+
+    public $timestamps = false;
 }

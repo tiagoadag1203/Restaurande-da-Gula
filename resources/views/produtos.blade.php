@@ -23,9 +23,6 @@
     <nav>
         <a href="/">Início</a>
         <a href="produtos">Cadastrar Novo Prato</a>
-        <a href="cardapio">Ver os pratos</a>
-        <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
-        <a href="Fornecedores">Fornecedor</a>
     </nav>
 
     <section>
@@ -44,7 +41,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="formQtdProduto">Quantidade comprada</label>
+                    <label for="formQtdProduto">Quantidade de Pratos Feito</label>
                     <input type="text" id="formQtdProduto" name="formQtdProduto">
                 </div>
 

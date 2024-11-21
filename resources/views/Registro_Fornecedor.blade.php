@@ -13,16 +13,14 @@
 <body>
     <nav>
         <a href="/">Início</a>
-        <a href="produtos">Cadastrar Novo Prato</a>
-        <a href="cardapio">Ver os pratos</a>
-        <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
         <a href="Fornecedores">Fornecedor</a>
+        <a href="cadastroFornecedores">Cadastrar um novo fornecedor</a>
     </nav>
 
     <div class="form-container">
         <h2>Registro de Fornecedores</h2>
         <form action="/cadastroFornecedores/cadastrar" method="post">
-            @csrf <!-- Adicione o token CSRF para proteção -->
+            @csrf
             <div class="form-group">
                 <label for="NomeFornecedor">Nome do Fornecedor:</label>
                 <input type="text" id="NomeFornecedor" name="nomeFornecedor" required>
