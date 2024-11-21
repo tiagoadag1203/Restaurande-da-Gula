@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            height: 50vw;
         }
 
         /* Navbar */
         nav {
-            background-color: #333;
+            background-color: #0E0E0E;
             overflow: hidden;
+            padding: 20px;
         }
 
         nav a {
@@ -28,28 +30,33 @@
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            color: #FFCC00;
         }
 
         /* Main content */
         main {
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+            height: 50vh;
+            gap: 0.2rem;
+            padding: 2rem;
         }
 
         main h1 {
-            color: #333;
+            color: #FFCC00;
+            font-size: 5rem;
+            margin: 0;
         }
 
         main p {
             color: #666;
-            font-size: 18px;
+            font-size: 2rem;
         }
 
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #0e0e0e;
             color: white;
             text-align: center;
             padding: 10px;
@@ -75,13 +82,13 @@
 
     <!-- Main content -->
     <main>
-        <h1>Bem-vindo ao Sistema</h1>
-        <p>Este é o seu sistema de gestão, onde você pode gerenciar pedidos, visualizar produtos e muito mais.</p>
+        <h1>Restaurante da Gula</h1>
+        <p>Este é o seu sistema de gestão, para gerenciar pedidos, visualizar produtos e muito mais.</p>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 - Sistema de Gestão de Pedidos</p>
+        <p>© 2024 - Restaurante da Gula</p>
     </footer>
     
 </body>
