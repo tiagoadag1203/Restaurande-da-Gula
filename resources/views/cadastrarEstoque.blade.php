@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Item no Estoque</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
     <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
@@ -14,10 +13,9 @@
     <nav>
         <a href="/">Início</a>
         <a href="estoque">Estoque</a>
-        </nav>
+    </nav>
 
-
-        @if(session('success'))
+    @if(session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
         </div>
@@ -42,14 +40,15 @@
                 <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex.: Tomate" required>
             </div>
             <div class="mb-3">
-                <label for="quantidade" class="form-label">quantidade</label>
-                <input type="text" id="Quantidade" name="quantidade" class="form-control" placeholder="Ex.: 10" required>
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" class="form-control" placeholder="Ex.: 10" required>
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="submit" class="btn btn-warning">Cadastrar</button>
             </div>
         </form>
     </div>
+
 </body>
 </html>

@@ -29,6 +29,11 @@
         <td>{{ $for->nome }}</td>
         <td>{{ $for->cpf_cnpj }}</td>
         <td>{{ $for->endereco }}</td>
+        <td>
+            <a href="{{ url('/fornecedores/editar/' . $for->id_fornecedor) }}" class="btn">
+            Editar
+            </a>
+        </td>
     </tr>
 @endforeach
 </table>
