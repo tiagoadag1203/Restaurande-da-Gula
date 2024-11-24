@@ -35,6 +35,9 @@
                         <td>{{ $ingrediente->id_ingrediente }}</td>
                         <td>{{ $ingrediente->nome }}</td>
                         <td>{{ $ingrediente->quantidade }}</td>
+                        <td>
+                            <a href="{{ route('estoque.edit', $ingrediente->id_ingrediente) }}" class="btn btn-warning btn-sm">Editar</a>
+                        </td>
                     </tr>
                 @endforeach
 

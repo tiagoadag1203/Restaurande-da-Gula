@@ -27,7 +27,7 @@
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title">{{ $prd->nome }} <i class="material-icons">more_vert</i></span>
-                        <p><a href="#">Comprar</a></p>
+                        <p><a href="#">Detalhar</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title">{{ $prd->nome }}<i class="material-icons">close</i></span>
